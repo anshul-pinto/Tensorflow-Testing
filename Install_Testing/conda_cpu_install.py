@@ -12,11 +12,11 @@ print("==========================INSTALL TESTING============================")
 print("\n\nTest Case Suite: {}".format(sys.argv[1]))
 print("Test Case ID: {}".format(sys.argv[2]))
 
-win_install_command = "gcloud compute instances create my-instance --image-family windows-2012-r2 --image-project gce-uefi-images --no-shielded-secure-boot"
-ubuntu_install_command = "gcloud compute instances create my-instance --image-family ubuntu-1804-lts --image-project gce-uefi-images --no-shielded-secure-boot"
-fedora_install_command = "gcloud compute instances create my-instance --image-family rhel-8-v20191018 --image-project gce-uefi-images --no-shielded-secure-boot"
-centos_install_command = "gcloud compute instances create my-instance --image-family centos-6-v20191014 --image-project gce-uefi-images --no-shielded-secure-boot"
-debian_install_command = "gcloud compute instances create my-instance --image-family debian-9-tf-1-15-v20191021 --image-project gce-uefi-images --no-shielded-secure-boot"
+win_install_command = "gcloud compute instances create my-instance-windows --image-family windows-2012-r2 --image-project gce-uefi-images --no-shielded-secure-boot"
+ubuntu_install_command = "gcloud compute instances create my-instance-ubuntu --image-family ubuntu-1804-lts --image-project gce-uefi-images --no-shielded-secure-boot"
+fedora_install_command = "gcloud compute instances create my-instance-fedora --image-family rhel-8-v20191018 --image-project gce-uefi-images --no-shielded-secure-boot"
+centos_install_command = "gcloud compute instances create my-instance-centos --image-family centos-6-v20191014 --image-project gce-uefi-images --no-shielded-secure-boot"
+debian_install_command = "gcloud compute instances create my-instance-debian --image-family debian-9-tf-1-15-v20191021 --image-project gce-uefi-images --no-shielded-secure-boot"
 print("Creating a new instance of GCP with Operating System: {}".format(sys.argv[3]))
 
 if sys.argv[3] == "Ubuntu":
